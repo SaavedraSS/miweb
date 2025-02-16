@@ -5,4 +5,8 @@ Comandos de git bash:
 - git status: muestra el estado actual de los archivos (la etapa de 'stage'). Si se ha modificado, borrado o agregado algo.
 - git add <file>: permite agregar un cambio en el repositorio en el 'stage'. se realiza mediante le nombre del archivo.
 - git commit -m "<mensaje sobre el commit>": permite agregar un commit
-- rm <file>: borrar archivo
+
+- rm <file>: borrar archivo. no lo agrega al 'stage'
+- git rm <file>: borra y agrega la eliminación del archivo al 'stage'
+- git restore --staged <file>: restaura el cambio del 'stage'
+- git restore <file>: restaura el cambio.
