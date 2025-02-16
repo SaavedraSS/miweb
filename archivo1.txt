@@ -20,3 +20,4 @@ Comandos de git bash:
 - mv <file> <new_name_file>: cambiar de nombre un archivo. mv comando mover.
     Esto borra el archivo y crea otro con el nombre especificado.
 - git add <file> <new_name_file>: agrega ambos cambios (creación y eliminación) al 'stage'
+- git mv <file> <new_name_file>: renombra un archivo y lo agrega al 'stage'
