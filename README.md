@@ -1,10 +1,17 @@
 chanchito feliz
 
-# Flujo de trabajo
-|computadora|Stage|commit|server (opcional)|
+# Flujo de trabajo de Git
+computadora -> Stage -> commit -> server (opcional)
 
 # Comandos de git bash:
+- git config --global -e: abre el archivo de configuración global en el editor predeterminado.
+- code .: abre la carpeta actual desde el editor predeterminado.
 - ls: permite mostrar una lista de los archivos y carpetas dentro de la carpeta actual
+-pwd: indica la carpeta actual
+- cd <carpeta>: permite acceder a una carpeta que se encuentra dentro de la carpeta actual
+- cd .. : permite retroceder una carpeta de la actual.
+- mkdir <nomre-nuevo-directorio>: crea una nueva carpeta en la carpeta actual.
+
 - git status: muestra el estado actual de los archivos (la etapa de 'stage'). Si se ha modificado, borrado o agregado algo.
 - git status -s: muestra el estado actual de los archivos de manera abreviada.
     - Colores de cada símbolo
@@ -66,3 +73,7 @@ Se crea un archivo .gitignore y dentro colocamos los archivos y carpetas a ignor
 # Uniendo Ramas
 Desde la rama a la cual se queremos acoplar, se ejecuta el comando:
 - git merge <rama-a-acoplar>
+
+# Subir los commits al server (GitHub)
+- git push
+- git push -u origin <rama-a-subir-en-repositorio>: sube una rama al repositorio
