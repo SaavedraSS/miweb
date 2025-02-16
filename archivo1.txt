@@ -22,6 +22,7 @@ chanchito feliz
 
 - git add <file>: permite agregar un cambio en el repositorio en el 'stage'. se realiza mediante le nombre del archivo.
     de esta manera git puede seguir el rastro del archivo.
+- cat <file>: muestra el contenido del archivo.
 - git commit -m "<mensaje sobre el commit>": permite agregar un commit
 
 ## Eliminar y restaurar archivos
@@ -53,3 +54,15 @@ Se crea un archivo .gitignore y dentro colocamos los archivos y carpetas a ignor
     - / + texto + Enter: Busca un texto específico en el historial.
     - q: Sale del visor (como ya mencionamos).
 - git log --oneline: Forma resumida. Muestra un identificador junto al mensaje de cada commit
+
+# Ramas (branches)
+- git branch: muestra todas las ramas. Se muestra un asterisco en la rama en la que estamos trabajando actualmente.
+- git branch <nombre-de-nueva-rama>: crea una nueva rama, sin cambiarse a esa.
+- git branch -d <nombre-rama-eliminar>: Elimina una rama
+
+- git checkout -b <nombre-de-nueva-rama>: crea una nueva rama y se cambia a ella.
+- git checkout <nombre-de-rama-a-cambiar>: cambia de rama
+
+# Uniendo Ramas
+Desde la rama a la cual se queremos acoplar, se ejecuta el comando:
+- git merge <rama-a-acoplar>
