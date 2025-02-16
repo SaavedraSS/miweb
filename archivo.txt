@@ -1,12 +1,22 @@
 chanchito feliz
 
+Flujo de trabajo
+|computadora|Stage|commit|server (opcional)|
+
 Comandos de git bash:
 - ls: permite mostrar una lista de los archivos y carpetas dentro de la carpeta actual
 - git status: muestra el estado actual de los archivos (la etapa de 'stage'). Si se ha modificado, borrado o agregado algo.
 - git add <file>: permite agregar un cambio en el repositorio en el 'stage'. se realiza mediante le nombre del archivo.
+    de esta manera git puede seguir el rastro del archivo.
 - git commit -m "<mensaje sobre el commit>": permite agregar un commit
 
+# Eliminar y restaurar archivos
 - rm <file>: borrar archivo. no lo agrega al 'stage'
 - git rm <file>: borra y agrega la eliminación del archivo al 'stage'
 - git restore --staged <file>: restaura el cambio del 'stage'
 - git restore <file>: restaura el cambio.
+
+# Cambiando de nombre
+- mv <file> <new_name_file>: cambiar de nombre un archivo. mv comando mover.
+    Esto borra el archivo y crea otro con el nombre especificado.
+- git add <file> <new_name_file>: agrega ambos cambios (creación y eliminación) al 'stage'
