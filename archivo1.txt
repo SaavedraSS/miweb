@@ -39,3 +39,17 @@ chanchito feliz
 # Ignorando archivos y carpetas
 Se usa para evitar que accidentalmente se suban archivos al servidor.
 Se crea un archivo .gitignore y dentro colocamos los archivos y carpetas a ignorar
+
+# Visualizando todos los cambios
+- git diff: cambios que se han hecho en la computadora, sin ser agregados al 'stage', en cada línea de los archivos.
+- git diff --staged: cambios que se encuentran en la etapa de 'stage'
+
+# Mostrar el historial de los commits
+- git log: Muestra el identificador del commit junto al autor y su correo, fecha y mensaje.
+    el historial se muestra en un visor.
+    - Barra espaciadora: Avanza una página hacia abajo.
+    - b: Retrocede una página hacia arriba.
+    - Enter: Avanza una línea hacia abajo.
+    - / + texto + Enter: Busca un texto específico en el historial.
+    - q: Sale del visor (como ya mencionamos).
+- git log --oneline: Forma resumida. Muestra un identificador junto al mensaje de cada commit
