@@ -3,6 +3,10 @@ chanchito feliz
 # Flujo de trabajo de Git
 computadora -> Stage -> commit -> server (opcional)
 
+# Inicializar un repositorio
+Después de acceder a la carpeta que contiene nuestra proyecto, ejecutamos el comando:
+- git init
+
 # Comandos de git bash:
 - git config --global -e: abre el archivo de configuración global en el editor predeterminado.
 - code .: abre la carpeta actual desde el editor predeterminado.
